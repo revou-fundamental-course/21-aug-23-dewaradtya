@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySchool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="logo">
+      <h1>Smkn 1 Purwosari</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Major</a></li>
+        <li><a href="#visimisi">Visi & Mission</a></li>
+        <li><a href="#contact">Massage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- home -->
+  <section id="home">
+    <div class="container">
+      <div class="slider">
+        <img src="assets/school1.jpeg" alt="">
+        <img src="assets/school3.jpeg" alt="">
+        <img src="assets/school2.jpg" alt="">
+      </div>
+      <div class="deskripsi">
+        <h1>Hi <span id="name">Awed</span>, Welcome to Our Website</h1>
+        <div class="kolom">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore autem aut impedit.
+            Minus cum explicabo quia recusandae ut. Accusamus?</p>
+          <button type="submit" id="tombol">Chang Name</button><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our profile -->
+  <section id="profile">
+    <div class="teks">
+      <div class="kolom">
+        <h2>Major</h2>
+        <p>These are the majors available at our high school. </p>
+      </div>
+      <div class="jurusan">
+        <div class="card">
+          <img src="assets/tpm.jpg" alt="">
+          <p>Machining</p>
+        </div>
+        <div class="card">
+          <img src="assets/it.jpeg" alt="">
+          <p>Informatics</p>
+        </div>
+        <div class="card">
+          <img src="assets/pertanian.jpeg" alt="">
+          <p>Agriculture</p>
+        </div>
+        <div class="card">
+          <img src="assets/elektronika.jpeg" alt="">
+          <p>Electronics</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Visi & Misi -->
+  <section id="visimisi">
+    <div class="vision-mission">
+      <div class="container">
+        <h2>Vision & Mission</h2>
+        <div class="visi-misi">
+          <div class="vision">
+            <a href=""><img src="assets/visi.jpeg"></a>
+            <h3>Vision</h3>
+            <p>To be an inspirational learning hub that shapes future leaders.</p>
+          </div>
+          <div class="mission">
+            <a href=""><img src="assets/kreatif.jpg"></a>
+            <h3>Mission</h3>
+            <p>We are dedicated to providing quality education that nurtures students' potential in academics,
+              character,
+              and creativity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROFILE -->
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        Name:
+        <input type="text" id="name" name="name" placeholder="Nama"><br>
+
+        Tanggal Lahir:<br>
+        <input type="date" id="birth-date"><br>
+
+        Jenis Kelamin:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label>
+        <br>
+
+        pesan:
+        <textarea placeholder="Pesan" name="massage"></textarea><br>
+
+        <button type="submit" id="kirim">Submit</button><br>
+        <div class="hasil"></div>
+      </form>
+    </div>
+    <div class="subcribe__msg">
+      <h2 class="form_title">Messages</h2>
+      <p>Current Time: <span id="sender-current-datetime"></span></p>
+      <p>Email: <span id="sender-email"></span></p>
+      <p>Birth Date: <span id="sender-bday-date"></span></p>
+      <p>Gender: <span id="sender-gender"></span></p>
+      <p>Messages: <span id="sender-msg"></span></p>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer>
+    <p>Copyright &copy; 2023 Dewa Raditya.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
