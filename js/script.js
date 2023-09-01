@@ -25,26 +25,24 @@ setInterval(nextImage, 3000); // Auto-slide every 3 seconds
 
 showImage(currentIndex);
 
-// Dapatkan referensi ke elemen-elemen yang diperlukan
-const kirimButton = document.getElementById("kirim");
-const hasilElement = document.getElementById("hasil");
 
-// Tambahkan event listener untuk tombol "Submit"
-kirimButton.addEventListener("click", function (event) {
-  event.preventDefault(); // Mencegah pengiriman formulir
 
-  // Dapatkan nilai dari input
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
 
-  // Tampilkan hasil di elemen hasilElement
-  hasilElement.innerHTML = `
-    <p>Name: ${name}</p>
-    <p>Email: ${email}</p>
-    <p>Message: ${message}</p>
-  `;
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Mencegah pengiriman formulir
+
+  // Mengambil nilai dari inputan formulir
+  var name = document.getElementById("name").value;
+  var tanggalLahir = document.getElementById("tanggalLahir").value;
+  var gender = document.querySelector('input[name="gender"]:checked').value;
+  var message = document.querySelector('textarea[name="massage"]').value; // Perbaiki "massage" menjadi "message"
+
+  // Menampilkan hasil di sebelah formulir
+  document.getElementById("output-nama").textContent = name;
+  document.getElementById("output-tanggalLahir").textContent = tanggalLahir;
+  document.getElementById("output-gender").textContent = gender;
+  document.getElementById("output-message").textContent = message;
+
+  // Mengosongkan formulir
+  document.getElementById("contact-form").reset();
 });
-
-
-

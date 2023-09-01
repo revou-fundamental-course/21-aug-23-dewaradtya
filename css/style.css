@@ -3,6 +3,7 @@ html {
     padding: 0;
     background-color: #65451F;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -176,7 +177,9 @@ nav ul li a:hover {
     flex-wrap: nowrap;
     width: 100px;
     margin: 20px;
+    border-radius: 20px;
     text-align: center;
+    border-radius: 20px;
 }
 
 .vision {
@@ -234,13 +237,14 @@ nav ul li a:hover {
 }
 
 
-
-
 /* CONTACT */
 
 #contact {
-    width: 300px;
-    margin: 3rem;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 70px;
     color: #C8AE7D;
 }
 
@@ -278,10 +282,27 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #65451F;
+    color: #C8AE7D;
 }
 
 #kirim:hover {
     background-color: #765827;
+}
+
+.outputForm {
+    width: 400px;
+    margin-top: 70px;
+    padding: 20px;
+    background-color: #E4E4D0;
+    border-radius: 15px;
+    margin-left: 90%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    color: #765827;
+}
+
+.outputForm p {
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 /* footer */
@@ -298,17 +319,19 @@ footer p {
 }
 
 
-
 /* media screen */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
 
+    *{
+        overflow-x: hidden;
+    }
     /* home */
     #home {
         padding: 50px 0;
     }
 
     .deskripsi {
-        top: 10%;
+        top: 20%;
     }
 
     .deskripsi h1 {
@@ -327,19 +350,22 @@ footer p {
 
     /* major */
     .teks {
-        padding: 30px;
+        color: #C8AE7D;
+        padding: 50px;
+        flex: 1;
     }
 
     .jurusan {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: 400px;
+        justify-content: flex-end;
     }
 
     .card {
-        width: 50%;
-        margin: 10px auto;
-        padding: 10px;
+        margin: 10px 5px;
+        padding: 20px;
         text-align: center;
         background-color: #E4E4D0;
         border-radius: 15px;
@@ -347,12 +373,12 @@ footer p {
     }
 
     .card img {
-        max-width: 100%;
-        height: auto;
+        height: 300px;
+        border-radius: 15px;
     }
 
     .card p {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 5px;
     }
 
@@ -362,8 +388,8 @@ footer p {
     }
 
     .visi-misi {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: flex-end;
         width: 100%;
         margin: 0;
     }
@@ -384,13 +410,13 @@ footer p {
 
     .vision h3,
     .mission h3 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
     .vision p,
     .mission p {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -399,6 +425,13 @@ footer p {
     .contact input[type="date"],
     .contact textarea {
         width: 100%;
+    }
+
+    .outputForm {
+        position: absolute;
+        width: 400px;
+        margin-left: 20%;
+        padding: 20px;
     }
 }
 
@@ -502,6 +535,11 @@ footer p {
     .contact textarea {
         width: 100%;
     }
+
+    .outputForm {
+        margin-left: 50%;
+        width: 250px;
+    }
 }
 
 @media (max-width: 820px) {
@@ -589,6 +627,11 @@ footer p {
     .contact input[type="date"],
     .contact textarea {
         width: 100%;
+    }
+
+    .outputForm {
+        margin-left: 5%;
+        width: 180px;
     }
 }
 
@@ -678,6 +721,8 @@ footer p {
     .contact textarea {
         width: 100%;
     }
+
+
 }
 
 @media (max-width: 600px) {
@@ -755,6 +800,11 @@ footer p {
         display: inline-block;
         margin-right: 15px;
     }
+
+    .outputForm {
+        margin-left: 50%;
+        width: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -799,11 +849,12 @@ footer p {
     }
 
     .card {
+        width: 300px;
         padding: 15px;
     }
 
     .card p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     /* visimisi */
@@ -832,6 +883,7 @@ footer p {
         margin-right: 15px;
     }
 }
+
 @media (max-width: 360px) {
 
     .logo h1 {
@@ -874,6 +926,8 @@ footer p {
     }
 
     .card {
+        width: 280px;
+        ;
         padding: 15px;
     }
 
@@ -897,6 +951,10 @@ footer p {
     }
 
     /* contact */
+    .contact {
+        width: 250px;
+    }
+
     .contact label {
         margin-bottom: 5px;
         font-weight: bold;

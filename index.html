@@ -70,7 +70,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 
 
@@ -107,7 +106,7 @@
         <input type="text" id="name" name="name" placeholder="Nama"><br>
 
         Tanggal Lahir:<br>
-        <input type="date" id="birth-date"><br>
+        <input type="date" id="tanggalLahir"><br>
 
         Jenis Kelamin:
         <input type="radio" id="male" name="gender" value="male">
@@ -119,18 +118,17 @@
         pesan:
         <textarea placeholder="Pesan" name="massage"></textarea><br>
 
-        <button type="submit" id="kirim">Submit</button><br>
-        <div class="hasil"></div>
+        <button type="submit" id="pesan">Submit</button><br>
       </form>
     </div>
-    <div class="subcribe__msg">
-      <h2 class="form_title">Messages</h2>
-      <p>Current Time: <span id="sender-current-datetime"></span></p>
-      <p>Email: <span id="sender-email"></span></p>
-      <p>Birth Date: <span id="sender-bday-date"></span></p>
-      <p>Gender: <span id="sender-gender"></span></p>
-      <p>Messages: <span id="sender-msg"></span></p>
-    </div>
+    <div class="hasil">
+      <div class="outputForm">
+        <h3>Output:</h3>
+        <p>Name: <span id="output-nama"></span></p>
+        <p>Tanggal Lahir: <span id="output-tanggalLahir"></span></p>
+        <p>Jenis Kelamin: <span id="output-gender"></span></p>
+        <p>Pesan: <span id="output-message"></span></p>
+      </div>
     </div>
   </section>
 
